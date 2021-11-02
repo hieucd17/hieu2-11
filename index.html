@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wearther_app</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Scheherazade%20New">
+</head>
+<body>
+    <div class="container">
+        <div class="main-section">
+            <div class="search_bar">
+                <i class="fal fa-search"></i>
+                <input type="text" 
+                placeholder="Xem Thời Tiết Đi Mấy Em"
+                name="search_city" id="search_input">
+                <span class = "microPhone ">
+                    <i class="fas fa-microphone" ></i>
+                    <span class="recording_icon"></span>
+                </span>
+            </div>
+            <p class="weather_city"></p>
+            <p class="weather_state"></p>
+            <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="Weather_icon" class="weather_icon">
+            <p class="temperature">26</p>
+        </div>
+        <div class="additional-section">
+            <div class="row">
+                <div class="item">
+                    <div class="lable">Sky Mọc</div>
+                    <div class="value sunrise"></div>
+                </div>
+                <div class="item">
+                    <div class="lable">Sky Lặn</div>
+                    <div class="value sunset"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    <div class="lable">Độ Ẩm
+                    </div>
+                    <div class="value"><span class="humidity"></span>%</div>
+                </div>
+                <div class="item">
+                    <div class="lable">Tốc Độ Gió</div>
+                    <div class="value"><span class="wind_speed"></span>km/h</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="guide">
+        <ul>
+            <li><h3>Bạn muốn voice thời tiết hãy :</h3> ..thời tiết tại..'or'..thời tiết..</li>
+            <li><h3>Bạn muốn chỉnh màu nền hãy :</h3>Thay đổi màu nền...english</li>
+            <li><h3>Bạn cũng có thể xem thời gian hiện tại</h3></li>
+            <li><h3>Reset màu nền : 'Màu nền mặc định'</h3></li>
+        </ul>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./moment.js"></script>
+</body>
+</html>

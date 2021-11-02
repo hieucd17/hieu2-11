@@ -1,0 +1,193 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color:rgb(209, 32, 209);
+    text-align: center;
+    width: 400px;
+    max-width: 80%;
+    margin: 0px auto;
+    border-radius: 5px;
+    font-family: 'Scheherazade New', serif;
+}
+
+.additional-section {
+    background-color: rgb(202, 103, 31);
+}
+.search_bar {
+    padding-top:20px ;
+    position: relative;
+    width: 60%;
+    max-width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: center;
+}
+
+.search_bar i{
+    color:white;
+    font-weight: 500;
+    position: absolute;
+    margin-right: 0px;
+    left: 2px;
+    bottom: 5px;
+    font-size: 17px;
+}
+
+#search_input {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: transparent;
+    padding: 3px 3px 5px 15px;
+    height: 20px;
+    font-size: 16px;
+    /* margin-left: -40px; */
+}
+
+#search_input::placeholder {
+    color : gold;
+    padding-left: 4px;
+} 
+
+.microPhone i{
+    /* position: absolute; */
+    left: 225px;
+    /* top : 42px; */
+    cursor : pointer;
+}
+
+.microPhone .recording_icon {
+    display: none;
+    width : 9px;
+    height : 9px;
+    background-color: #e22d2d;
+    border-radius: 50%;
+    animation: abc 2s infinite linear;
+}
+
+@keyframes abc {
+    0% {
+        box-shadow: 0 0 2px 2 rgba(173, 0 ,0, .5);
+    }
+    65% {
+        box-shadow: 0 0 2px 5px rgba(173, 0, 0, .4);
+    }
+    100% {
+        box-shadow: 0 0 2px 5px rgba(173, 0, 0, 0.2);
+    }
+}
+
+.microPhone.recording .recording_icon {
+    display: inline-block;
+}
+
+.microPhone.recording i {
+    display: none;
+}
+
+@media screen and (max-width: 760px) {
+    #search_input::placeholder {
+        padding-right: 4px;
+        font-size: 12.5px;
+        color: white;
+    }
+
+    #search_input {
+        padding: 3px 3px 5px 10px;
+        width: 155px;
+    }
+
+    .guide {
+        margin-top: 390px;
+    }
+
+    .guide ul {
+        list-style: none;
+    }
+
+    .guide ul li {
+        font-size: 14px;
+    }
+
+    .microPhone {
+    }
+
+    .microPhone i {
+        position: absolute;
+        margin-left: -40px;
+    }
+
+    .microPhone .recording_icon {
+        margin-left: 5px;
+        margin-right: -20px;
+        padding: 0;
+    }
+
+}
+
+.weather_city {
+    margin-top: 40px;
+    color: white;
+    font-size: 22px;
+}
+
+.weather_state {
+    color:white;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.temperature {
+    font-size: 70px;
+    color: white;
+    font-weight: linear;
+    margin-top: -20px;   
+    position: relative;
+}
+
+.temperature::after {
+    content:'o';
+    position: absolute;
+    font-size: 35px;
+}
+
+.additional-section {
+    border-top: 1.5px solid white;
+    margin-top: 70px;
+    flex-direction: column;
+    display: flex;
+    padding: 10px 20px;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.item {
+    margin-top: 5px;
+    color: white;
+    flex:1;
+}
+
+.item .lable {
+    font-weight: 600;
+}
+
+.item .value {
+    font-weight: 300;
+}
+
+/* -----------mặt trời------------------- */
+
+.guide {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}
